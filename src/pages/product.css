@@ -1,0 +1,105 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.midel {
+  padding-top: 200px; 
+  display: flex;
+  margin-left: 30PX;
+  align-items: flex-start;
+
+}
+.rightside {
+  flex: 1;
+  padding-left: 20px;
+}
+.leftside {
+  flex: 1;
+  padding-right: 20px;
+}
+.imagecontrole{
+    width: 600px;
+    border-radius: 50px;
+}
+.bordeer{
+    border-bottom: 1px solid rgb(198, 195, 195);
+    margin-right: 20px;
+}
+
+.dk{
+    margin-top: 20px;
+    padding: 10px;
+}
+#dks{
+   margin-left: 10px;
+}
+.carts{
+  margin-top:20px;
+  color: rgb(253, 253, 253);
+  font-size: 20px;
+  cursor: pointer; 
+  background-color:rgb(251, 46, 10);
+  padding: 8px;
+  border-radius: 12px;
+  width: 250px;
+
+}
+.details{
+    margin-top: 40px;
+    border: 1px solid rgb(148, 147, 147);
+    width: 500px;
+    margin-left: 80px;
+    padding: 10px;
+    
+}
+.right{
+    margin-right: 30px;
+   font-size: 20px;
+}
+.left{
+  margin-left: 30px;
+}
+.mid{
+  width: 250px;
+  border-radius: 15px;
+}
+.box{
+  padding-top: 200px; 
+  display: flex;
+  margin-left: 30PX;
+  justify-content: center;
+  align-items: center;
+
+}
+.inner{
+     display: flex;
+  margin-left: 30PX;
+  justify-content:space-between;
+  align-items: center;
+  border: 1px solid;
+  width: 1000px;
+  border-radius: 15px; 
+  font-size: 20px;
+}
+.butt {
+  padding: 8px 16px;
+  margin: 5px;
+  border: 1px solid #333;
+  border-radius: 6px;
+  background-color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.butt:hover {
+  background-color: #f0f0f0;
+}
+
+/* Selected button */
+.active-size {
+  background-color: #333;
+  color: white;
+  border: 1px solid #333;
+}
