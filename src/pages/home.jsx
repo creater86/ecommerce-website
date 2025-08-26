@@ -19,7 +19,7 @@ const Home = () => {
         </div>
 
          <div className="center-logo">
-               <img src="/RuleBreakers.jpeg" alt="RuleBreaker Logo" />
+               <img src={process.env.PUBLIC_URL + "/RuleBreakers.jpeg"} alt="RuleBreaker Logo" />
         </div>
 
         

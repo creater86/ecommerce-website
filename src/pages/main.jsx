@@ -8,10 +8,10 @@ import { useNavigate } from 'react-router-dom';
 
 // Slider images
 const imageList = [
-  "/shirt.avif",
-  "/HOMEPAGE_3.avif",
-  "/HOMEPAGE1.avif",
-  "/homepage2.avif"
+  process.env.PUBLIC_URL + "/shirt.avif",
+  process.env.PUBLIC_URL + "/HOMEPAGE_3.avif",
+  process.env.PUBLIC_URL + "/HOMEPAGE1.avif",
+  process.env.PUBLIC_URL + "/homepage2.avif"
 ];
 
 export const Main = () => {

@@ -61,28 +61,6 @@ body, html {
 .left{
   margin-left: 30px;
 }
-.mid{
-  width: 250px;
-  border-radius: 15px;
-}
-.box{
-  padding-top: 200px; 
-  display: flex;
-  margin-left: 30PX;
-  justify-content: center;
-  align-items: center;
-
-}
-.inner{
-     display: flex;
-  margin-left: 30PX;
-  justify-content:space-between;
-  align-items: center;
-  border: 1px solid;
-  width: 1000px;
-  border-radius: 15px; 
-  font-size: 20px;
-}
 .butt {
   padding: 8px 16px;
   margin: 5px;
@@ -103,3 +81,4 @@ body, html {
   color: white;
   border: 1px solid #333;
 }
+

@@ -8,9 +8,9 @@ import { useNavigate } from 'react-router-dom'
 
 
 const imageList=[
- "/1.avif",
- "/2.avif",
- "/3.avif"
+process.env.PUBLIC_URL +  "/1.avif",
+process.env.PUBLIC_URL +  "/2.avif",
+process.env.PUBLIC_URL +  "/3.avif"
 ]
 
 export const Women = () => {

@@ -16,27 +16,37 @@ export const ShowProducts = () => {
 
   const [size, setSize] = useState("");
   const [quantity, setQuantity] = useState(1);
+const handelcart = () => {
+  if (!size) {
+    alert("Please select a size");
+    return;
+  }
 
-  const handelcart = () => {
-    if (!size) {
-      alert("Please select a size");
-      return;
-    }
+  // Always get array
+  let oldCart = JSON.parse(localStorage.getItem("cart")) || [];
 
-    localStorage.setItem(
-      "cart",
-      JSON.stringify({
-        image: product.image,
-        price: product.price,
-        size: size,
-        quantity: quantity,
-        title:product.title
-      })
-    );
+  // If not array, convert it into array
+  if (!Array.isArray(oldCart)) {
+    oldCart = [oldCart];
+  }
 
-    // Navigate to cart page
-    navigate("/cart");
+  const newItem = {
+    image: product.image,
+    price: product.price,
+    size: size,
+    quantity: quantity,
+    title: product.title,
   };
+
+  // Add new product
+  oldCart.push(newItem);
+
+  // Save again
+  localStorage.setItem("cart", JSON.stringify(oldCart));
+
+  navigate("/cart");
+};
+
 
   return (
     <div>
